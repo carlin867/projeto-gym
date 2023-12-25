@@ -78,8 +78,15 @@ header #m-h li:last-child{
 #botao{
     display: none;
 }
-
-@media (max-width:700px) {
+.link-logo{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+.link-logo:hover{
+    color: rgb(163, 159, 159);
+}
+@media (max-width:830px) {
     header{
         display: inline-block;
     }
@@ -94,7 +101,8 @@ header #m-h li:last-child{
         cursor: pointer;
     }
     header{
-        padding: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     header menu #p{
         display: none;
@@ -107,13 +115,18 @@ header #m-h li:last-child{
         width: 100%;
         
     }
+    #principal{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
    
 }
 #principal{
     position: relative;
     top: 130px;
     margin: auto;
-    width: 600px;
+    max-width: 600px;
     text-align: justify;
 }
 .completo{
